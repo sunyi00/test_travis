@@ -1,3 +1,4 @@
 image: bradrydzewski/python:2.7
 script:
+    - ls /usr/bin/firefox
     - py.test
