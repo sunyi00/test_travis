@@ -1,5 +1,5 @@
 image: bradrydzewski/python:2.7
 script:
     - pip install selenium
-    - sudo start xvfb
+    - sudo /usr/bin/Xvfb :90 -auth /etc/conf.d/xvfb.cfg -nolisten tcp -screen 0 1024x768x16 &
     - DISPLAY=:90 py.test
