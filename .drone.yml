@@ -2,4 +2,4 @@ image: bradrydzewski/python:2.7
 script:
     - pip install selenium
     - sudo start xvfb
-    - py.test
+    - DISPLAY=:90 py.test
