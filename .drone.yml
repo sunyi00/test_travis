@@ -1,4 +1,4 @@
 image: bradrydzewski/python:2.7
 script:
-    - ls /usr/bin/firefox
+    - sudo start xvfb
     - py.test
